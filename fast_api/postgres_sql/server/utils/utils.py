@@ -1,4 +1,4 @@
-from fastapi import Depends
+from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from datetime import datetime, timedelta
 from typing import Optional
@@ -28,9 +28,12 @@ def create_access_token(data: dict):
 def verify_token(token: str=Depends(oauth2_scheme)):
     try:
         decoded_token = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM]) 
-        return decoded_token
+        if decoded_token:
+            return decoded_token
+        else:
+            raise HTTPException(status_code=401, detail="Token not parsable")
     except Exception as e:
         print('An exception occurred')
-        print(e)
-        return None 
+        print(str(e))
+        raise HTTPException(status_code=401, detail="Token decorded") 
     

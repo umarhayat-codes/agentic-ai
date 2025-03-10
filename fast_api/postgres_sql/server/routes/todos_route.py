@@ -15,15 +15,15 @@ todos_router =  APIRouter()
 
 
 @todos_router.post('/create')
-async def create_todo(todo:CreateTodo,db: Session = Depends(get_db)):
+async def create_todo(todo:CreateTodo,user=Depends(verify_token) ,db: Session = Depends(get_db)):
     try:
-        jwt_token = todo.token
-        payload = verify_token(jwt_token)
-        print(payload)
-        id = payload.get('user_id')
+        # jwt_token = todo.token
+        # payload = verify_token(jwt_token)
+        # print(payload)
+        # id = payload.get('user_id')
         
-        db_todo = Todo(title=todo.title,description=todo.description,completed=todo.completed,user_id=id)
-
+        user_id = user.get("user_id")
+        db_todo = Todo(title=todo.title,description=todo.description,completed=todo.completed,user_id=user_id)
         db.add(db_todo)
         print(db_todo)
         db.commit()

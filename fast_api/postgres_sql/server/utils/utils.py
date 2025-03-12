@@ -1,10 +1,10 @@
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from datetime import datetime, timedelta
-from typing import Optional
 from dotenv import load_dotenv
 from os import getenv
 import jwt
+from passlib.context import CryptContext
 
 load_dotenv()
 
@@ -13,6 +13,13 @@ ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+pwd_context = CryptContext(schemes=['bcrypt'],deprecated="auto")
+
+def hash_password(password):
+    return pwd_context.hash(password)
+
+def verify_pwd(plain_pwd,hash_pwd):
+    return pwd_context.verify(plain_pwd,hash_pwd)
 
 def create_access_token(data: dict):
     try: 

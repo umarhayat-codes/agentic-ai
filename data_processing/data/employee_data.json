@@ -1,0 +1,28 @@
+{
+  "Name": [
+      "John Smith", "Sarah Johnson", "Michael Williams", "Emma Brown",
+      "David Jones", "Lisa Garcia", "Robert Miller", "Jennifer Davis",
+      "William Rodriguez", "Maria Martinez", "James Hernandez",
+      "Patricia Lopez", "Thomas Gonzalez", "Jessica Wilson"
+  ],
+  "Department": [
+      "IT", "HR", "Marketing", "Sales", "Finance", "IT", "Operations",
+      "HR", "Marketing", "Sales", "Finance", "IT", "Operations", "Sales"
+  ],
+  "Position": [
+      "Developer", "HR Manager", "Marketing Specialist", "Sales Rep",
+      "Financial Analyst", "Systems Admin", "Operations Manager",
+      "HR Specialist", "Marketing Director", "Sales Manager", "Accountant",
+      "IT Director", "Operations Analyst", "Sales Rep"
+  ],
+  "Salary": [
+      82667, 98452, 67890, 73450, 88750, 79500, 105200, 65320, 110250,
+      96780, 72540, 115000, 69300, 68420
+  ],
+  "Hire_Date": [
+      "2023-07-15", "2021-03-22", "2022-11-05", "2024-01-10",
+      "2021-09-30", "2022-05-17", "2020-07-25", "2023-02-12",
+      "2020-11-03", "2021-06-18", "2022-09-14", "2020-04-09",
+      "2023-08-21", "2023-05-07"
+  ]
+}

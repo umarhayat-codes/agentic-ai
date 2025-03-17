@@ -1,0 +1,16 @@
+student_id,first_name,last_name,gender,age,grade_level,major,gpa,attendance,extracurricular,scholarship,address,city,state,zip_code,joining_date,graduation_year
+1001,John,Smith,Male,18,Freshman,Computer Science,3.7,95,Chess Club,Yes,123 College Ave,Boston,MA,02115,2024-09-01,2028
+1002,Emma,Johnson,Female,19,Sophomore,Biology,3.9,98,Debate Team,Yes,456 University Dr,Seattle,WA,98105,2023-09-01,2027
+1003,Michael,Williams,Male,20,Junior,Business,3.2,88,Football,No,789 Campus Rd,Austin,TX,78712,2022-09-01,2026
+1004,Sophia,Brown,Female,19,Sophomore,Psychology,3.8,94,Student Government,Yes,234 College St,New York,NY,10001,2023-09-01,2027
+1005,James,Jones,Male,21,Senior,Engineering,3.5,92,Robotics Club,No,567 Main St,Chicago,IL,60605,2021-09-01,2025
+1006,Olivia,Garcia,Female,18,Freshman,English,3.6,96,Drama Club,No,890 Pine Ave,Los Angeles,CA,90001,2024-09-01,2028
+1007,William,Miller,Male,20,Junior,Physics,3.9,97,Science Club,Yes,321 Oak Dr,Philadelphia,PA,19104,2022-09-01,2026
+1008,Ava,Davis,Female,22,Senior,Mathematics,4.0,99,Math Team,Yes,654 Elm St,Miami,FL,33101,2021-09-01,2025
+1009,Alexander,Rodriguez,Male,19,Sophomore,Chemistry,3.4,91,Band,No,987 Cedar Ln,Denver,CO,80202,2023-09-01,2027
+1010,Isabella,Martinez,Female,18,Freshman,Art,3.3,87,Art Club,No,246 Maple Rd,Portland,OR,97201,2024-09-01,2028
+1011,Ethan,Hernandez,Male,20,Junior,History,3.7,93,History Society,Yes,135 Birch St,San Francisco,CA,94101,2022-09-01,2026
+1012,Mia,Lopez,Female,21,Senior,Sociology,3.8,95,Volunteer Club,Yes,864 Spruce Ave,Atlanta,GA,30301,2021-09-01,2025
+1013,Daniel,Gonzalez,Male,19,Sophomore,Economics,3.5,90,Debate Team,No,579 Fir Dr,Dallas,TX,75201,2023-09-01,2027
+1014,Charlotte,Wilson,Female,18,Freshman,Communications,3.6,94,Newspaper,No,246 Pine St,Nashville,TN,37201,2024-09-01,2028
+
